@@ -18,11 +18,10 @@ body{
     top: 40px;
 }
 
-
-#head {
-    color:gray;
-    font-style:italic;
-    background-color:#f4f7f8;
-    border-top:  2px dashed rgb(128, 128, 128, 0.4) ;
-    border-bottom: 2px dashed rgb(128, 128, 128, 0.4);
+.barra-de-opciones{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    border: 20px dashed rgba (128, 128, 128, 0.4);
+    
 }
