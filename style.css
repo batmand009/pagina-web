@@ -20,8 +20,101 @@ body{
 
 .barra-de-opciones{
     width: 100%;
-    height: 60px;
+    height: 100px;
     position: relative;
-    border: 20px dashed rgba (128, 128, 128, 0.4);
-    
+    background-color:#f4f7f8;
+    border-top:  2px dashed rgb(128, 128, 128, 0.5) ;
+    border-bottom: 2px dashed rgb(128, 128, 128, 0.5);
 }
+.fila{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin: 15px;
+}
+
+#head{
+    position: absolute;
+    color:gray;
+    font-style:italic;
+    bottom: 10px;
+    left: 40px;
+}
+
+#categorias, #conocenos, #filtros{
+    width: 120px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 255, 0.6);
+    border-radius: 10px;
+    color: rgba(71, 70, 70,0.8);
+    font-family:"Trebuchet MS", sans-serif;
+    font-size: 15px;
+}
+
+#busqueda{
+    width: 600px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 255, 0.6);
+    border-radius: 10px;
+    color: rgba(71, 70, 70,0.8);
+    font-family:"Trebuchet MS", sans-serif;
+    font-size: 15px;    
+}
+
+#carrito{
+    position: absolute;
+    right:40px;
+    bottom: 15px;
+    height: 70px;
+    width: 70px;
+}
+
+
+
+.barra-anuncios{
+    position:relative;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 255, 0.05);
+}
+.anuncios{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 600px;
+    margin:20px;
+}
+
+#anu1, #anu3{
+    position:relative;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    top:80px;    
+}
+
+#anu2{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    bottom: 40px;
+}
+#izquierda{
+    position: absolute;
+    top:200px;
+    left:150px;
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+}
+#derecha{
+    position: absolute;
+    top:200px;
+    right: 150px;
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+}
+
