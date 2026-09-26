@@ -121,7 +121,10 @@ body{
     border-radius: 30px;
 }
 
-
+.seccion-productos{
+    margin:20px;
+    margin-top:80px;
+}
 .barra-productos{
     position: relative;
     display: flex;
@@ -138,12 +141,8 @@ body{
     height: 40px;
     width: 20%;
     margin:20px;
-    background-color: rgba(0, 0, 255, 0.2);
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 255, 0.6);
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-family: Montserrat, "Montserrat Fallback: system-ui", "Montserrat Fallback: Arial", "Montserrat Fallback: sans-serif", sans-serif;
+    font-size: 30px;
            
 }
 
@@ -159,10 +158,10 @@ body{
     
     height: 10%;
     width: 100%;
-    background-color: rgba(0, 50, 255, 0.3);
+    background-color: rgba(200, 232, 237, 0.304);
     color: black;
-    border: 2px solid rgba(0, 0, 255, 0.5) ;
+    border: 2px solid rgba(124, 124, 124, 0.5) ;
     border-radius: 5px;
     font-size: 20px;
-    font-family:"Trebuchet MS", sans-serif ;
+    font-family:Montserrat, "Montserrat Fallback: system-ui", "Montserrat Fallback: Arial", "Montserrat Fallback: sans-serif", sans-serif ;
 }
