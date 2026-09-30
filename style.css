@@ -44,7 +44,7 @@ body{
     
 }
 
-#categorias, #conocenos, #filtros{
+#categorias, #conocenos, #filtros, #inicio-sesion, #registro{
     width: 200px;
     height: 50px;
     border: 1px solid rgba(0, 0, 255, 0.6);
@@ -65,7 +65,6 @@ body{
     font-size: 25px;
         
 }
-
 #carrito{
     position: absolute;
     right:40px;
@@ -164,4 +163,24 @@ body{
     border-radius: 5px;
     font-size: 20px;
     font-family:Montserrat, "Montserrat Fallback: system-ui", "Montserrat Fallback: Arial", "Montserrat Fallback: sans-serif", sans-serif ;
+}
+
+.fondo-registro{
+    z-index: 1000;
+    position: fixed;
+    top:0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.oculto{
+    display: none;
 }
