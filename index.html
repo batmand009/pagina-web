@@ -5,8 +5,7 @@
     <title>CETEC</title>
     <link rel="stylesheet" href="style.css"/>
     <script src="script.js" defer></script>
-
-     
+ 
 </head>
 
 <body>
@@ -14,32 +13,25 @@
     <header>
          <div class="linea-gruesa"></div>
          <div class="linea-delgada"></div>
+      
 
-         <div> 
-            <h2></h2>
-         </div>
-        
-        
          <div class="barra-de-opciones">
              <h1 id="head" > CETEC </h1>
                  <div class="fila">
-                     <button id="categorias">         CATEGORIAS        </button>
-                     <button id="conocenos">          CONOCENOS         </button>
-                     <button id="filtros">            FILTROS           </button>
-                     <button id="inicio-sesion">        INICIAR SESION  </button>
-                     <button id="registro">        REGISTRARSE </button>
+                     <button type="button" id="categorias">         CATEGORIAS        </button>
+                     <button type="button" id="conocenos">          CONOCENOS         </button>
+                     <button type="button" id="filtros">            FILTROS           </button>
+                     <button type="button" id="inicio-sesion">        INICIAR SESION  </button>
+                     <button type="button" id="registro">        REGISTRARSE </button>
 
                  </div>
 
                  <div class="fila">
-                     
-                     <button id="busqueda">           🔎BARRA DE BUSQUEDA....  </button>
-                               
+                     <input type="search" id="busqueda" placeholder="Que desea buscar el dia de hoy...">      </button>        
                  </div>
 
-                 <div> 
-                      
-                      <button id="carrito">            carrito            </button>
+                 <div>  
+                      <button type="button" id="carrito">            carrito            </button>
                  </div>        
          </div> 
 
@@ -52,23 +44,20 @@
     <main>
          <div class="barra-anuncios">
             <div class="botones">
-                <button id="izquierda"> 🡰 </button>
-                <button id="derecha">🡲 </button>
+                <button type="button" id="izquierda"> 🡰 </button>
+                <button type="button" id="derecha"  > 🡲 </button>
             </div>
 
              <div class="anuncios">
-                 <button id="anu1"> <img src="imagen anuncios/rtx.webp"/> Anuncio 1 </button>
-            
-                 <button id="anu3"> <img src="imagen anuncios/ryzen.jpg"/> Anuncio 3 </button>
-
-                 <button id="anu2"> <img src="imagen anuncios/xbox.jpg"/>Anuncio 2 </button>
+                 <button id="anu1"> <img src="imagen anuncios/rtx.webp"/>  </button>
+                 <button id="anu2"> <img src="imagen anuncios/xbox.jpg"/> </button>
+                 <button id="anu3"> <img src="imagen anuncios/ryzen.jpg"/>  </button> 
              </div>
          </div>
 
 
+         <section  class="seccion-productos">
 
-        <div class="seccion-productos">
-        
              <h1 class="etiqueta-fila"> PRODUCTOS DESTACADOS</h1>
         
              <div class="barra-productos">
@@ -108,12 +97,10 @@
                      <span class="descripcion-producto" >$cantidad</span>
                  </div>
              </div>
-         </div>
-
+        </section>
             
         
-
-         <div class="seccion-productos">
+        <section class="seccion-productos">
         
              <h1 class="etiqueta-fila"> LINEA DE ASUS</h1>
         
@@ -154,23 +141,23 @@
                      <span class="descripcion-producto" >$cantidad</span>
                  </div>
              </div>
-         </div>
+        </section>
 
          <div class="fondo-registro oculto">
             <div class="ventana-emergente">
-                <button id="cerrar-registro"> X </button>
+                <button type="button" id="cerrar-registro"> X </button>
                  <h2 id="inicio">registrar una cuenta</h2>
                  <div class="campo">
                     <input type="text" placeholder="Usuario...." id="nombre"/>   
                     <input type="email" placeholder="Correo Electronico..." id="correo"/>    
                     <input type="password" placeholder="Contraseña..." id="contraseña"/> 
                 </div>
-                <button type="submit" id="registrar">REGISTRAR</button>
+                <button type="button" id="registrar">REGISTRAR</button>
 
             </div>
          </div>
     </main>
-    
+
     <footer> </footer>
 
 </body>

@@ -1,14 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    margin: 0;
+}
+
 body{
+    width: 100%;
     background-color: #010a27;
     margin: 0;
+}
+header{
+    position: relative;
 }
 
 .linea-gruesa{
     width: 100%;
     height:100px;
-    background-color: #000000;
-    position: relative;
-    border-bottom: 1px solid rgb(171, 255, 46, 0.4);
+    background-color: rgb(11, 11, 109);
+    border-bottom: 2px solid rgba(171, 255, 46, 0.4);
+    margin-bottom:20px;
     
 }
 .linea-delgada{
@@ -52,7 +65,6 @@ body{
     border: 1px solid #7fe80f;
     border-radius: 10px;
     background-color: #48810c;
-    color: rgba(71, 70, 70,0.8);
     color: greenyellow;
     font-family:"Trebuchet MS", sans-serif;
     font-size: 25px;
@@ -65,12 +77,12 @@ body{
     border: 1px solid #7fe80f;
     border-radius: 10px;
     background-color: #48810c;
-    color: rgba(71, 70, 70,0.8);
     color: greenyellow;
     font-family:"Trebuchet MS", sans-serif;
     font-size: 25px;
-        
+
 }
+
 #carrito{
     position: absolute;
     right:40px;
@@ -81,89 +93,66 @@ body{
 
 
 
-.barra-anuncios{
-    position:relative;
+.barra-anuncios {
+    position: relative;
     width: 100%;
-    height: 500px;
+    padding: 60px 0 20px;
 }
-.anuncios{ 
+ 
+.anuncios {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 700px;
-    margin:0px;
+    gap: 2.5%;
+    padding: 0 10%;
 }
-
-#anu1 {
-    position: absolute;
-    left: 10%;
-    width: 600px;
-    height: 350px;
-    border-radius: 10px;
-    top:80px;    
+ 
+.anuncios button {
+    flex: 1 1 0;
+    min-width: 0;
+    aspect-ratio: 16 / 10;
+    padding: 0;
     overflow: hidden;
-    box-shadow: 0 0px 10px rgba(0, 0, 255, 0.5);
-    transform: translateY(-10px);
-}
-
-#anu3{
-    position: absolute;
-    right: 10%;
-    width: 600px;
-    height: 350px;
+    border: 2px solid white;
     border-radius: 10px;
-    top:80px;    
-    overflow: hidden;
-    box-shadow: 0 0px 10px rgba(0, 0, 255, 0.5);
-    transform: translateY(-10px);
-
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    transition: transform 0.2s;
 }
-
-#anu1 img, #anu2 img, #anu3 img{
-    position: relative;
-    left:-5%;
-    top:-5%;
-    width: 110%;
-    height: 110%;
-    object-fit: contain;
+ 
+.anuncios button:hover {
+    transform: translateY(-20px);
 }
-
-#anu2{
+ 
+.anuncios img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+#izquierda, #derecha {
     position: absolute;
-    width: 600px;
-    height: 350px;
-    border-radius: 10px;
-    bottom: 40px;
-    overflow: hidden;
-    box-shadow: 0 0px 10px rgba(0, 0, 255, 0.5);
-
-}
-#izquierda{
-    position: absolute;
-    top:200px;
-    left:100px;
-    height: 100px;
-    width: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: clamp(50px, 5vw, 80px);
+    height: clamp(50px, 5vw, 80px);
+    padding: 0;
+    border: 1px solid green;
     border-radius: 30px;
-    font-size: 40px;
     background-color: #02185f;
     color: rgb(33, 235, 33);
-    border: 1px solid green;
-    box-shadow: 0 0px 10px greenyellow;
+    font-size: clamp(24px, 2.5vw, 40px);
+    box-shadow: 0 0 10px greenyellow;
 }
-#derecha{
-    position: absolute;
-    top:200px;
-    right: 100px;
-    height: 100px;
-    width: 100px;
-    border-radius: 30px;
-    font-size: 40px;
-      background-color: #02185f;
-    color: rgb(33, 235, 33);
-    border: 1px solid green;
-    box-shadow: 0 0px 10px greenyellow;
+ 
+#izquierda {
+    left: 2%;
 }
+#derecha {
+    right: 2%;
+}
+ 
 
 .seccion-productos{
     margin:20px;
@@ -204,7 +193,7 @@ body{
     height: 250px;
     width: 250px;
     border-radius: 10px;
-    border: 2px solid gray
+    border: 2px solid gray;
 }
 
 .descripcion-producto{
