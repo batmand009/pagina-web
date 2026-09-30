@@ -24,9 +24,9 @@ body{
     height: 150px;
     position: relative;
     background-color:rgba(41, 19, 114, 0.187);
-    border-top:  3px dashed rgba(20, 117, 235, 0.8) ;
-    border-bottom: 3px dashed rgba(20, 117, 235, 0.8);
-    box-shadow: 0 0px 15px blue;
+    border-top:  3px solid rgba(20, 117, 235, 0.8) ;
+    border-bottom: 3px solid rgba(20, 117, 235, 0.8);
+    box-shadow: 0 0px 10px blue;
 }
 .fila{
     display:flex;
@@ -94,14 +94,29 @@ body{
     margin:0px;
 }
 
-#anu1, #anu3{
-    position:relative;
+#anu1 {
+    position: absolute;
+    left: 10%;
     width: 600px;
     height: 350px;
     border-radius: 10px;
     top:80px;    
     overflow: hidden;
     box-shadow: 0 0px 10px rgba(0, 0, 255, 0.5);
+    transform: translateY(-10px);
+}
+
+#anu3{
+    position: absolute;
+    right: 10%;
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    top:80px;    
+    overflow: hidden;
+    box-shadow: 0 0px 10px rgba(0, 0, 255, 0.5);
+    transform: translateY(-10px);
+
 }
 
 #anu1 img, #anu2 img, #anu3 img{
