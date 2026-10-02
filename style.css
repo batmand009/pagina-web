@@ -19,15 +19,15 @@ header{
 .linea-gruesa{
     width: 100%;
     height:100px;
-    background-color: rgb(11, 11, 109);
-    border-bottom: 2px solid rgba(171, 255, 46, 0.4);
+    background-color: rgb(22, 3, 34);
+    border-bottom: 2px solid rgb(150, 27, 150);
     margin-bottom:20px;
     
 }
 .linea-delgada{
     width: 100%;
     height: 20px;
-    background-color: #7fe80f;
+    background-color:rgb(4, 4, 68);
     position: absolute;
     top: 60px;
 }
@@ -36,22 +36,22 @@ header{
     width: 100%;
     height: 150px;
     position: relative;
-    background-color:rgba(41, 19, 114, 0.187);
-    border-top:  3px solid rgba(20, 117, 235, 0.8) ;
-    border-bottom: 3px solid rgba(20, 117, 235, 0.8);
-    box-shadow: 0 0px 10px blue;
+    background-color:#310a3f;
+    border-top:  3px solid rgba(82, 12, 100, 0.8);
+    border-bottom: 3px solid rgba(82, 12, 100, 0.8);
+    box-shadow: 0 0px 10px purple;
 }
 .fila{
     display:flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
+    gap:25px;
     margin: 15px;
 }
 
 #head{
     position: absolute;
-    color:#7fe80f;
+    color:pink;
     font-style:italic;
     bottom: 15px;
     left: 40px;
@@ -60,27 +60,34 @@ header{
 }
 
 #categorias, #conocenos, #filtros, #inicio-sesion, #registro{
-    width: 200px;
-    height: 50px;
-    border: 1px solid #7fe80f;
+    width: 150px;
+    height: 40px;
+    border: 2px solid rgb(155, 65, 95);
     border-radius: 10px;
-    background-color: #48810c;
-    color: greenyellow;
+    background-color: #5c1573;
+    color:  palevioletred;
+    font-family:"Trebuchet MS", sans-serif;
+    font-size: 20px;
+
+}
+
+
+#busqueda{
+    width: 1000px;
+    height: 50px;
+    border: 2px solid rgb(155, 65, 95);
+    border-radius: 10px;
+    background-color: #5c1573;
+    color: palevioletred;
     font-family:"Trebuchet MS", sans-serif;
     font-size: 25px;
 
 }
 
-#busqueda{
-    width: 1000px;
-    height: 50px;
-    border: 1px solid #7fe80f;
-    border-radius: 10px;
-    background-color: #48810c;
-    color: greenyellow;
-    font-family:"Trebuchet MS", sans-serif;
-    font-size: 25px;
-
+.fila button:hover {
+    transition: 0.3s;
+    transform: scale(120%);
+    background-color: pink !important;
 }
 
 #carrito{
@@ -89,6 +96,9 @@ header{
     bottom: 15px;
     height: 120px;
     width: 120px;
+    background-color: #5c1573;
+    border-radius: 10px;
+    border: 2px solid #340d41;
 }
 
 
@@ -234,9 +244,9 @@ header{
     padding: 25px;
 
     border-radius: 20px;
-    background-color:  rgba(21, 22, 92, 0.927);
-    border:  3px solid #09b2e1;
-    box-shadow: 0 2px 20px rgba(11, 255, 251, 0.25);
+    background-color: rgb(2, 2, 71);
+    border:  3px solid green;
+    box-shadow: 0 2px 20px rgba(8, 162, 8, 0.25);
 
     display: flex;
     flex-direction: column;
@@ -255,7 +265,7 @@ header{
     color:white;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgba(106, 156, 241, 0.196);
+    background-color: rgba(41, 19, 114, 0.187);
     width: 300px;
     height: 40px;
     border-radius: 15px;
