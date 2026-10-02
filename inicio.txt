@@ -1,1 +1,29 @@
 este es un texto para iniciar un commit
+
+
+
+#categorias{
+    position: absolute;
+    top: 10px;
+    left: 130px
+}
+
+#conocenos{
+    position: absolute;
+    top: 10px;
+    left:220px
+}
+
+#filtros{
+    position: absolute;
+    top:10px;
+    left: 320px;
+}
+
+#busqueda{
+    position: absolute;
+    bottom: 10px;
+    
+    left: 130px;
+    width:300px;
+}

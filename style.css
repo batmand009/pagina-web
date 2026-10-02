@@ -2,6 +2,20 @@
     box-sizing: border-box;
 }
 
+:root{
+    --principal: #310a3f;
+    --p1:rgb(22, 3, 34);
+    --p2: rgba(82, 12, 100, 0.8);
+    --p3: rgba(150, 27, 150);
+    --p4:purple;
+    --secundario: pink;
+    --sec2: palevioletred;
+    --tercero: rgb(1, 1, 85);
+    --border2: rgb(155, 65, 95);
+    --border3: #5c1573;
+    
+}
+
 html{
     width: 100%;
     margin: 0;
@@ -9,7 +23,7 @@ html{
 
 body{
     width: 100%;
-    background-color: #010a27;
+    background-color: #04113a;
     margin: 0;
 }
 header{
@@ -19,27 +33,27 @@ header{
 .linea-gruesa{
     width: 100%;
     height:100px;
-    background-color: rgb(22, 3, 34);
-    border-bottom: 2px solid rgb(150, 27, 150);
+    background-color: var(--p1);
+    border-bottom: 2px solid var(--p2);
     margin-bottom:20px;
     
 }
 .linea-delgada{
     width: 100%;
     height: 20px;
-    background-color:rgb(4, 4, 68);
+    background-color: var(--tercero);
     position: absolute;
     top: 60px;
 }
 
 .barra-de-opciones{
     width: 100%;
-    height: 150px;
+    height: 130px;
     position: relative;
-    background-color:#310a3f;
-    border-top:  3px solid rgba(82, 12, 100, 0.8);
-    border-bottom: 3px solid rgba(82, 12, 100, 0.8);
-    box-shadow: 0 0px 10px purple;
+    background-color: var(--principal);
+    border-top:  3px solid var(--p2);
+    border-bottom: 3px solid var(--p2);
+    box-shadow: 0 0px 10px var(--p4);
 }
 .fila{
     display:flex;
@@ -51,9 +65,9 @@ header{
 
 #head{
     position: absolute;
-    color:pink;
+    color: var(--secundario);
     font-style:italic;
-    bottom: 15px;
+    
     left: 40px;
     font-size: 50px;
     
@@ -62,10 +76,10 @@ header{
 #categorias, #conocenos, #filtros, #inicio-sesion, #registro{
     width: 150px;
     height: 40px;
-    border: 2px solid rgb(155, 65, 95);
+    border: 2px solid var(--border2);
     border-radius: 10px;
-    background-color: #5c1573;
-    color:  palevioletred;
+    background-color: var(--border3);
+    color:  var(--sec2);
     font-family:"Trebuchet MS", sans-serif;
     font-size: 20px;
 
@@ -74,11 +88,11 @@ header{
 
 #busqueda{
     width: 1000px;
-    height: 50px;
-    border: 2px solid rgb(155, 65, 95);
+    height: 40px;
+    border: 2px solid var(--border2);
     border-radius: 10px;
-    background-color: #5c1573;
-    color: palevioletred;
+    background-color: var(--border3);
+    color: var(--sec2);
     font-family:"Trebuchet MS", sans-serif;
     font-size: 25px;
 
@@ -87,16 +101,16 @@ header{
 .fila button:hover {
     transition: 0.3s;
     transform: scale(120%);
-    background-color: pink !important;
+    background-color:var(--secundario) !important;
 }
 
 #carrito{
     position: absolute;
     right:40px;
     bottom: 15px;
-    height: 120px;
+    height: 100px;
     width: 120px;
-    background-color: #5c1573;
+    background-color: var(--border3);
     border-radius: 10px;
     border: 2px solid #340d41;
 }
@@ -122,7 +136,7 @@ header{
     aspect-ratio: 16 / 10;
     padding: 0;
     overflow: hidden;
-    border: 2px solid white;
+    border: 2px solid pink;
     border-radius: 10px;
     background-color: black;
     box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
@@ -131,6 +145,7 @@ header{
  
 .anuncios button:hover {
     transform: translateY(-20px);
+    box-shadow: 0 0px 20px white;
 }
  
 .anuncios img {
@@ -148,12 +163,20 @@ header{
     width: clamp(50px, 5vw, 80px);
     height: clamp(50px, 5vw, 80px);
     padding: 0;
-    border: 1px solid green;
+    border: 1px solid purple;
     border-radius: 30px;
-    background-color: #02185f;
-    color: rgb(33, 235, 33);
+    background-color: #5c1573;
+    color: palevioletred;
     font-size: clamp(24px, 2.5vw, 40px);
-    box-shadow: 0 0 10px greenyellow;
+    box-shadow: 0 0 10px pink;
+}
+
+.botones button:hover{
+    transition: .03s;
+    background-color: purple !important;
+    color: pink !important;
+    border: 2px solid pink !important;
+    box-shadow: 0 0px 15px rgb(161, 38, 59);
 }
  
 #izquierda {
@@ -175,6 +198,8 @@ header{
     width: 300px;
     height: 400px;
     border-radius: 10px;
+    box-shadow: 0 0 15px pink;
+    border: 2px solid var(--principal);
 
 }
 .barra-productos{
@@ -195,15 +220,16 @@ header{
     margin:20px;
     font-family: Montserrat, "Montserrat Fallback: system-ui", "Montserrat Fallback: Arial", "Montserrat Fallback: sans-serif", sans-serif;
     font-size: 30px;
+    
            
 }
 
 .imagen-productos{
-    background-color: white;
+    background-color: pink;
     height: 250px;
     width: 250px;
     border-radius: 10px;
-    border: 2px solid gray;
+    border: 4px solid palevioletred;
 }
 
 .descripcion-producto{
@@ -244,10 +270,9 @@ header{
     padding: 25px;
 
     border-radius: 20px;
-    background-color: rgb(2, 2, 71);
-    border:  3px solid green;
-    box-shadow: 0 2px 20px rgba(8, 162, 8, 0.25);
-
+    background-color: var(--principal);
+    border:  5px solid var(--border2);
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,10 +303,10 @@ header{
     height: 45px;
     margin: 10px;
     border-radius: 10px;
-    background-color: rgba(23, 36, 135, 0.985);
+    background-color: var(--secundario);
     font-family: 'Courier New', Courier, monospace;
-    box-shadow: 0 0px 10px rgba(58, 58, 171, 0.446);
-    color:white;
+    box-shadow: 0 0px 10px var(--secundario);
+    color: var(--principal) ;
 
     
 }
